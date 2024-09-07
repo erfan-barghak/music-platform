@@ -1,0 +1,206 @@
+/* عمومی */
+body {
+    font-family: 'IRANSans', sans-serif;
+    background-color: #1a1a1a;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1, h2 {
+    font-family: 'IRANSans', sans-serif;
+    color: #f4f4f4;
+}
+
+/* هدر */
+header {
+    background-color: #212121;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 30px;
+    color: #f39c12;
+}
+
+.main-nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.main-nav ul li {
+    margin-left: 20px;
+}
+
+.main-nav ul li a {
+    color: #f4f4f4;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.menu-toggle, .close-menu {
+    background: none;
+    border: none;
+    color: #f39c12;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+/* بخش اسلایدر */
+.slider-container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+.slider {
+    display: flex;
+    transition: all 0.5s ease;
+}
+
+.slide {
+    min-width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.slide img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.slide-content {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #f4f4f4;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 8px;
+    width: calc(100% - 40px);
+    text-align: center;
+}
+
+.prev-slide, .next-slide {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 100;
+    border-radius: 50%;
+}
+
+.prev-slide {
+    left: 10px;
+}
+
+.next-slide {
+    right: 10px;
+}
+
+/* موزیک‌ها */
+.music-slider {
+    display: flex;
+    overflow-x: auto;
+    padding: 20px 0;
+    gap: 15px;
+    scroll-snap-type: x mandatory;
+}
+
+.music-item {
+    flex: 0 0 auto;
+    width: 200px;
+    border-radius: 10px;
+    background-color: #333;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    scroll-snap-align: center;
+    transition: transform 0.3s ease;
+}
+
+.music-item:hover {
+    transform: scale(1.05);
+}
+
+.music-item img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #f39c12;
+}
+
+.music-info {
+    padding: 15px;
+    text-align: center;
+}
+
+.music-info h3 {
+    color: #f39c12;
+    margin: 0;
+    font-size: 16px;
+}
+
+.music-info p {
+    font-size: 14px;
+    color: #bbb;
+}
+
+/* ریسپانسیو برای موبایل */
+@media (max-width: 768px) {
+    .music-item {
+        width: 150px;
+    }
+
+    header h1 {
+        font-size: 22px;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        background-color: #212121;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .close-menu {
+        display: block;
+        font-size: 40px;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+    }
+
+    .main-nav.active ul {
+        display: flex;
+    }
+}

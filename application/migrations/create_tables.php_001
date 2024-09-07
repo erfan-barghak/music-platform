@@ -1,0 +1,78 @@
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+
+class Migration_Create_Tables extends CI_Migration {
+
+    public function up() {
+        // ساخت جدول کاربران
+        $this->dbforge->add_field(array(
+            'id' => array(
+                'type' => 'INT',
+                'constraint' => 5,
+                'unsigned' => TRUE,
+                'auto_increment' => TRUE
+            ),
+            'username' => array(
+                'type' => 'VARCHAR',
+                'constraint' => '100',
+            ),
+            'password' => array(
+                'type' => 'VARCHAR',
+                'constraint' => '255',
+            ),
+            'email' => array(
+                'type' => 'VARCHAR',
+                'constraint' => '100',
+            ),
+            'role' => array(
+                'type' => 'VARCHAR',
+                'constraint' => '20',
+                'default' => 'user' // نقش پیش‌فرض کاربر
+            ),
+            'created_at' => array(
+                'type' => 'DATETIME',
+                'null' => TRUE,
+            ),
+        ));
+        $this->dbforge->add_key('id', TRUE);
+        $this->dbforge->create_table('users');
+
+        // ساخت جدول موزیک‌ها
+        $this->dbforge->add_field(array(
+            'id' => array(
+                'type' => 'INT',
+                'constraint' => 5,
+                'unsigned' => TRUE,
+                'auto_increment' => TRUE
+            ),
+            'title' => array(
+                'type' => 'VARCHAR',
+                'constraint' => '255',
+            ),
+            'artist' => array(
+                'type' => 'VARCHAR',
+                'constraint' => '255',
+            ),
+            'album' => array(
+                'type' => 'VARCHAR',
+                'constraint' => '255',
+            ),
+            'release_date' => array(
+                'type' => 'DATE',
+                'null' => TRUE,
+            ),
+            'created_at' => array(
+                'type' => 'DATETIME',
+                'null' => TRUE,
+            ),
+        ));
+        $this->dbforge->add_key('id', TRUE);
+        $this->dbforge->create_table('music');
+    }
+
+    public function down() {
+        // حذف جدول‌ها
+        $this->dbforge->drop_table('users');
+        $this->dbforge->drop_table('music');
+    }
+}

@@ -1,0 +1,501 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main styles */
+main {
+    width: 80%;
+    margin: 20px auto;
+}
+
+/* Slider styles */
+.slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.slider .slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider .slide {
+    min-width: 100%;
+    position: relative;
+}
+
+.slider img {
+    width: 100%;
+    height: auto;
+}
+
+.slider .caption {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.slider .caption h2 {
+    margin: 0 0 10px 0;
+    font-size: 24px;
+}
+
+.slider .caption p {
+    margin: 0;
+    font-size: 16px;
+}
+
+/* Sections styles */
+section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+/* Button styles */
+.btn-more {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    color: #fff;
+    background-color: #007bff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-more:hover {
+    background-color: #0056b3;
+}
+
+/* استایل برای تصاویر موزیک */
+.music-image {
+    width: 100%; /* عرض تصویر به اندازه کامل عنصر والد */
+    height: auto; /* ارتفاع به صورت خودکار تنظیم شود تا نسبت تصویر حفظ شود */
+    border-radius: 8px; /* گوشه‌های تصویر را گرد می‌کند */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* سایه ملایم برای تصویر */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* انیمیشن نرم برای تغییرات */
+}
+
+.music-image:hover {
+    transform: scale(1.05); /* بزرگ کردن تصویر هنگام هاور */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* سایه بزرگ‌تر هنگام هاور */
+}
+
+/* استایل برای لیست موزیک‌ها */
+.featured-music ul, .recently-played ul, .newly-added ul {
+    list-style-type: none; /* حذف نقاط لیست */
+    padding: 0; /* حذف فاصله داخلی لیست */
+    margin: 0; /* حذف فاصله خارجی لیست */
+}
+
+.featured-music li, .recently-played li, .newly-added li {
+    display: flex; /* نمایش به صورت افقی */
+    align-items: center; /* تراز کردن عمودی عناصر */
+    margin-bottom: 15px; /* فاصله بین آیتم‌های لیست */
+}
+
+.music-image-wrapper {
+    flex: 0 0 100px; /* عرض ثابت برای تصویر */
+    margin-right: 15px; /* فاصله بین تصویر و متن */
+}
+
+.music-info {
+    flex: 1; /* فضای باقی‌مانده برای اطلاعات موزیک */
+}
+
+/* استایل برای دکمه‌های مشاهده بیشتر */
+.btn-more {
+    display: inline-block; /* نمایش به صورت بلوکی */
+    padding: 10px 20px; /* فاصله داخلی دکمه */
+    background-color: #007bff; /* رنگ پس‌زمینه دکمه */
+    color: #fff; /* رنگ متن دکمه */
+    text-decoration: none; /* حذف زیرخط از لینک */
+    border-radius: 5px; /* گوشه‌های دکمه را گرد می‌کند */
+    transition: background-color 0.3s ease; /* انیمیشن نرم برای تغییر رنگ */
+}
+
+.btn-more:hover {
+    background-color: #0056b3; /* رنگ پس‌زمینه دکمه هنگام هاور */
+}
+
+
+/* استایل برای بخش‌های کشویی */
+.music-slider, .category-slider {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px 0;
+    scroll-snap-type: x mandatory;
+}
+
+.music-item, .category-item {
+    flex: 0 0 auto;
+    width: 200px; /* عرض باکس موزیک */
+    margin-right: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    scroll-snap-align: start;
+    background-color: #fff;
+}
+
+.music-item img, .category-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.music-info, .category-item h3 {
+    padding: 10px;
+    text-align: center;
+}
+
+.music-info h3 {
+    font-size: 16px;
+    margin: 0;
+    color: #333;
+}
+
+.music-info p {
+    font-size: 14px;
+    color: #666;
+}
+
+.category-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+}
+
+.category-item h3 {
+    font-size: 14px;
+    color: #333;
+}
+
+.btn-more {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn-more:hover {
+    background-color: #0056b3;
+}
+
+/* استایل برای کل بخش موزیک‌ها */
+.featured-music ul,
+.recently-played ul,
+.newly-added ul {
+    display: flex;
+    flex-wrap: nowrap; /* برای جلوگیری از انتقال آیتم‌ها به خط بعد */
+    overflow-x: auto; /* برای فعال کردن اسکرول افقی در صورت نیاز */
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+/* استایل برای هر آیتم موزیک */
+.featured-music li,
+.recently-played li,
+.newly-added li {
+    flex: 0 0 auto; /* جلوگیری از تغییر اندازه باکس‌ها */
+    margin-right: 15px; /* فاصله بین آیتم‌ها */
+    border-radius: 10px; /* گوشه‌های گرد */
+    overflow: hidden; /* برای پنهان کردن هر چیزی که از باکس خارج می‌شود */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* سایه برای باکس */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* انیمیشن برای افکت‌ها */
+    background-color: #fff; /* رنگ پس‌زمینه سفید */
+}
+
+.featured-music li:hover,
+.recently-played li:hover,
+.newly-added li:hover {
+    transform: translateY(-5px); /* افکت جابجایی */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* تغییر سایه */
+}
+
+/* استایل برای تصویر موزیک */
+.music-image {
+    width: 100%; /* عرض کامل باکس */
+    height: auto; /* ارتفاع خودکار */
+}
+
+/* استایل برای عنوان و هنرمند */
+.music-info {
+    padding: 10px;
+    text-align: center; /* متن را در وسط قرار می‌دهد */
+}
+
+/* استایل دکمه‌های بیشتر */
+.btn-more {
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007bff; /* رنگ پس‌زمینه دکمه */
+    color: #fff; /* رنگ متن دکمه */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-more:hover {
+    background-color: #0056b3; /* تغییر رنگ پس‌زمینه هنگام هاور */
+}
+
+/* استایل برای آیتم‌های موزیک که اکنون لینک هستند */
+.music-item {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.music-item:hover .music-info {
+    background-color: rgba(0, 0, 0, 0.5); /* تغییر رنگ پس‌زمینه هنگام هاور */
+}
+
+.music-info {
+    padding: 10px;
+    text-align: center;
+    background-color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+/* استایل برای بخش‌های دیگر همانند قبل */
+.featured-music, .recently-played, .newly-added, .categories {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.music-slider, .category-slider {
+    display: flex;
+    overflow-x: auto;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    gap: 15px;
+}
+
+.music-item, .category-item {
+    flex: 0 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 200px;
+}
+
+.music-item:hover, .category-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.music-image {
+    width: 100%;
+    height: auto;
+}
+
+.btn-more {
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-more:hover {
+    background-color: #0056b3;
+}
+
+.category-item {
+    background-color: #e9ecef;
+    padding: 15px;
+    text-align: center;
+}
+
+.category-item h3 {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .music-slider, .category-slider {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .music-item, .category-item {
+        width: 90%;
+        margin-bottom: 15px;
+    }
+}
+
+.category-section {
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+.category-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.category-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.category-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.category-list li {
+    margin: 10px;
+    width: calc(33.33% - 20px);
+}
+
+.category-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.category-item h3 {
+    margin-top: 0;
+}
+
+.category-item p {
+    color: #666;
+}
+
+

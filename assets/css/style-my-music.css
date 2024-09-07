@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.user-music {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.user-music h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.music-table {
+    overflow-x: auto;
+}
+
+.music-table table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.music-table th, .music-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.music-table th {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.music-table td img.music-image {
+    width: 100px;
+    height: auto;
+    border-radius: 4px;
+}
+
+.music-table a.download-link {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.music-table a.download-link:hover {
+    text-decoration: underline;
+}
+
+.music-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}

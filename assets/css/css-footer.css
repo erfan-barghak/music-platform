@@ -1,0 +1,26 @@
+/* استایل فوتر */
+footer {
+    background-color: #333; /* رنگ پس‌زمینه فوتر */
+    color: #fff;            /* رنگ متن فوتر */
+    position: relative;    /* موقعیت نسبی */
+    bottom: 0;             /* پایین‌ترین موقعیت در صفحه */
+    width: 100%;           /* عرض کامل صفحه */
+    text-align: center;    /* تنظیم متن در وسط */
+}
+
+footer .container {
+    width: 100%;    /* عرض حداکثر */
+    margin: 0 auto;      /* مرکز چینش */
+}
+
+/* اطمینان از اینکه فوتر همیشه در پایین است */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;  /* ارتفاع حداقل صفحه */
+    margin: 0;
+}
+
+main {
+    flex: 1;  /* فضای اصلی را پر می‌کند */
+}

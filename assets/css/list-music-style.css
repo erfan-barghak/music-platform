@@ -1,0 +1,73 @@
+/* استایل کلی صفحه */
+.container {
+    margin: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* استایل عنوان صفحه */
+.container h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+/* استایل لیست موزیک‌ها */
+.music-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.music-list .music-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 15px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.music-list .music-item:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+}
+
+.music-list .music-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.music-list .music-item .music-info {
+    flex: 1;
+}
+
+.music-list .music-item .music-info h4 {
+    font-size: 1.2rem;
+    margin: 0;
+    color: #333;
+}
+
+.music-list .music-item .music-info p {
+    font-size: 0.9rem;
+    color: #6c757d;
+    margin: 5px 0;
+}
+
+.music-list .music-item .music-info a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.music-list .music-item .music-info a:hover {
+    color: #0056b3;
+}
