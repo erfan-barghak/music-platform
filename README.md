@@ -2,8 +2,8 @@
 ![image](https://github.com/user-attachments/assets/8a8bba26-4244-4d57-ad35-8245d82dcbb5)
 ![image](https://github.com/user-attachments/assets/83bb7af3-470e-44a6-aaa1-fd66459d1a57)
 ![image](https://github.com/user-attachments/assets/584bc155-bdf7-459e-bcc3-139392e29b0a)
-The simple Platform Music
-Controllers:
+The simple Platform Music <br>
+Controllers:<br>
       -> AdminDashboard.php
 			   The dashboard controller takes the information from the user model and sends it to the dashboard_admin.php page In 
          View directory.
