@@ -9,13 +9,14 @@ Controllers:<br>
          View directory. <br>
          The information sent is the information of registered users and the number of users and the number of songs on the 
          site.
+	 <hr>
       -> AdsController.php <br>
 	       The advertisement controller receives the information from the billing model and sends it to the home page to <br>     display <br>
          the advertisement on the site. <br>
          Also, the advertisement controller is responsible for controlling the creation and editing pages and the <br>
          advertisement list. <br>
 
-
+<hr>
 
 
 Details Login Moder: <br>
