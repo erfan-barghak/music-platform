@@ -19,6 +19,6 @@ Controllers:<br>
 <hr>
 
 
-Details Login Moder: <br>
+Details Login AdminDashboard: <br>
 Email: barerf1232@gmail.com <br>
 Passcode: Erfanba1232 
