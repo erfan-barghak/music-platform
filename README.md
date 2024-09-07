@@ -4,20 +4,20 @@
 ![image](https://github.com/user-attachments/assets/584bc155-bdf7-459e-bcc3-139392e29b0a)
 The simple Platform Music <br>
 Controllers:<br>
-      -> AdminDashboard.php
-			   The dashboard controller takes the information from the user model and sends it to the dashboard_admin.php page In 
-         View directory.
+      -> AdminDashboard.php <br>
+	 The dashboard controller takes the information from the user model and sends it to the dashboard_admin.php page In <br>
+         View directory. <br>
          The information sent is the information of registered users and the number of users and the number of songs on the 
          site.
-			-> AdsController.php
-	       The advertisement controller receives the information from the billing model and sends it to the home page to display 
-         the advertisement on the site.
-         Also, the advertisement controller is responsible for controlling the creation and editing pages and the 
-         advertisement list.
+      -> AdsController.php <br>
+	       The advertisement controller receives the information from the billing model and sends it to the home page to <br>     display <br>
+         the advertisement on the site. <br>
+         Also, the advertisement controller is responsible for controlling the creation and editing pages and the <br>
+         advertisement list. <br>
 
 
 
 
-Details Login Moder:
-Email: barerf1232@gmail.com
-Passcode: Erfanba1232
+Details Login Moder: <br>
+Email: barerf1232@gmail.com <br>
+Passcode: Erfanba1232 
